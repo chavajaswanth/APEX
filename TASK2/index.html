@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form & To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">Tasks</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name:
+          <input type="text" id="name" name="name" />
+          <span class="error" id="nameError"></span>
+        </label>
+
+        <label>Email:
+          <input type="email" id="email" name="email" />
+          <span class="error" id="emailError"></span>
+        </label>
+
+        <label>Message:
+          <textarea id="message" name="message"></textarea>
+          <span class="error" id="messageError"></span>
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="todo-section">
+      <h2>My To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Enter new task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
