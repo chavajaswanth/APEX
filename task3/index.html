@@ -1,0 +1,55 @@
+<!doctype html> 
+<html lang="en"> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Responsive + Carousel + API Demo</title> 
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div class="wrap"> 
+
+  
+    <header>
+      <h1>Responsive + Carousel + Fetch Demo</h1> 
+      <p class="muted">Mobile → Tablet → Desktop friendly</p> 
+    </header>
+
+    <main class="grid">
+
+    
+      <section class="card">
+        <h2>Image Carousel (interactive)</h2>
+        <div class="carousel" id="carousel">
+          <div class="slides"> 
+            <div class="slide"><img src="https://picsum.photos/id/1015/900/400" alt="Slide 1"></div>
+            <div class="slide"><img src="https://picsum.photos/id/1016/900/400" alt="Slide 2"></div>
+            <div class="slide"><img src="https://picsum.photos/id/1018/900/400" alt="Slide 3"></div>
+          </div>
+          
+          <button class="nav-btn nav-prev">◀</button>
+          <button class="nav-btn nav-next">▶</button>
+        </div>
+        
+        <div class="controls">
+          <button class="btn" id="pauseBtn">Pause Auto</button>
+          <small class="muted">Hover to pause or swipe on mobile</small>
+        </div>
+      </section>
+
+    
+      <aside class="card">
+        <h2>Fetch Data from API</h2>
+        <p class="muted">Click to get a random joke:</p>
+        <div>
+          <button class="btn" id="fetchBtn">Get Random Joke</button>
+        </div>
+        <div id="apiOutput">No data yet. Click the button.</div>
+      </aside>
+
+    </main>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
